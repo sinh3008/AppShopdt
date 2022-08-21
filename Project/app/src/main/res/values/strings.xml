@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Smart Phone Shop</string>
+    <string name="title_login">Chào mừng bạn đến với SmartphoneShop</string>
+    <string name="Passwordtxt">Mật khẩu</string>
+    <string name="Usernametxt">Tài khoản</string>
+    <string name="titleLogin">Chào mừng bạn đến với Smart Phone Shop</string>
+    <string name="t_i_kho_n">Tài khoản</string>
+    <string name="qu_n_m_t_kh_u">Quên mật khẩu</string>
+    <string name="ghi_nh_m_t_kh_u">Ghi nhớ mật khẩu</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="l_xu_n_sinh">Lê Xuân Sinh</string>
+    <string name="_0909011111">0909011111</string>
+    <string name="hpn">HPN</string>
+    <string-array name="genderCus">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/colorsMenu"
+        android:enabled="true"
+        android:title="Màu sắc"/>
+    <item
+        android:id="@+id/memoryMenu"
+        android:enabled="true"
+        android:title="Dung lượng"/>
+</menu>

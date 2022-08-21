@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="sans-serif"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activity.User.ThaydoithongtinActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thông tin"
+            android:textColor="#756C6C"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/custom_logo_header_colorful" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/formThaydoiNamecustomer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/icon_person"
+        android:drawableEnd="@drawable/icon_person_white"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Tên người dùng"
+        android:inputType="textPersonName"
+        android:textColorHint="#756C6C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+
+    <EditText
+        android:id="@+id/formThaydoiPhoneCustomer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/icon_phone_register"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:textColorHint="#756C6C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formThaydoiNamecustomer" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGender"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:orientation="horizontal"
+        android:textColorHint="#756C6C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formThaydoiPhoneCustomer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="50dp"
+            android:text="Giới tính"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/formThaydoiRadGender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textSize="18sp">
+
+            <RadioButton
+                android:id="@+id/formThaydoiRadNam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/formThaydoiRadNu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/formThaydoiAddressCustomer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/icon_address_register"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Địa chỉ"
+        android:inputType="textCapWords"
+        android:textColorHint="#756C6C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutGender" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:hintTextColor="@color/text_color_hint"
+        app:layout_constraintTop_toBottomOf="@id/formThaydoiAddressCustomer"
+        app:passwordToggleDrawable="@drawable/icon_eye_selector"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/formThaydoiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_background"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:textColorHint="#756C6C"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_hotendangki" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/formThayDoiBtnSave"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_background_red"
+        android:text="Lưu thay đổi"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordnew" />
+
+    <TextView
+        android:id="@+id/formThayDoiBtnBack"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_background_red"
+        android:text="Trở lại"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formThayDoiBtnSave" />
+</androidx.constraintlayout.widget.ConstraintLayout>

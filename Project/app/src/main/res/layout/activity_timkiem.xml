@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.User.TimkiemActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#f6553f"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/SearchTxtProduct"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Tìm kiếm"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="130dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/SearchTxtProduct2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:onClick="Trovetrangchu"
+            android:paddingRight="10dp"
+            android:text="Trở về"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/listviewTimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_search"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+</LinearLayout>

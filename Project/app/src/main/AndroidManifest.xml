@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.Admin.ChiTietAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.TimkiemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.ThongtincanhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.ThemhoadonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.ThaydoithongtinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.User.GiohangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.DatHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.ChitietsanphamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.TrangchuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.MemoryAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.ColorsAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.ThemSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.ShippingAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.BillsAdminActivity"
+            android:exported="false"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".Activity.Admin.ThemDanhMucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.AdminActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activity.Admin.CategoryAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.ProductAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.UserAdminActivity"
+            android:exported="false" />
+        <activity android:name=".Activity.User.DanhsachsanphamActivity" />
+    </application>
+
+</manifest>
